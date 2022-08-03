@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int levels = 1;
+    int counter= 1;
+    for (int i=1; n-counter >= 0; i++){
+        n -= counter;
+        levels++;
+        counter += levels;
+    }
+    cout << levels-1;
+    return 0;
+}
