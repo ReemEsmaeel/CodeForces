@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    int n; int result = 0;
+    cin >> n;
+    int array [n-1];
+    int A , B;
+    for (int i=0; i<n-1; i++){
+        cin >> array[i];
+    }
+    cin >> A >> B;
+    for (int i=A-1; i<B-1; i++){
+        result += array[i];
+    }
+    cout << result;
+    return 0;
+}
