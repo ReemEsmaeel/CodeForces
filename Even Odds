@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    long long n,k,oddRange,evenRange;
+    cin >> n >> k;
+    evenRange = n/2; oddRange = evenRange;
+    if (n%2 != 0){
+        oddRange++;
+    }
+    if (k <= oddRange){
+        cout << 2LL * k -1;
+    } else {
+        k = k - oddRange;
+        cout << 2LL * k;
+    }
+    return 0;
+}
